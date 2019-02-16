@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+}
+body {
+    background: no-repeat center/75% url(../images/logo.jpg);
+    background-color: black;
+}
+.card {
+    background-color: transparent;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 40vw;
+    object-fit: contain;
+}
+.choosePlayer {
+    background-color: rgba(2, 117, 216, 0.4);
+}
+.playerSelected {
+    background-color: rgba(2, 117, 216, 1);
+}
+.chooseOpponent {
+    background-color: rgba(217, 83, 79, 0.4);
+}
+.opponentSelected {
+    background-color: rgba(217, 83, 79, 1);
+}

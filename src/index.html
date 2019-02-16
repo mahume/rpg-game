@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPG Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- Add scrolling start screen, progress bar -->
+
+    <div class="row">
+        <div id="playerFightArea" class="col-lg-2"></div>
+        <div id="characterStagingArea" class="col-lg-8">
+            <div class="container">
+                <div class="row">
+                    <div id="skywalkerCard" class="col-lg-3">
+                        <!-- Luke Skywalker -->
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body text-center bg-white">
+                                <h5 class="card-title">Luke Skywalker</h5>
+                            </div>
+                            <img id="skywalker" src="assets/images/skywalker.png" class="card-img-top" alt="Luke Skywalker">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-heart fa-lg text-danger mr-2"></i>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Health
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="skywalkerHealthBadge" class="badge badge-danger m-0 p-2"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>  
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Attack
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="skywalkerAttackBadge" class="badge badge-info m-0 p-2"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-shield-alt fa-lg text-secondary mr-2"></i>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Counter Attack
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="skywalkerCounterAttackBadge" class="badge badge-secondary m-0 p-2">10</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <!-- Obi Wan Kenobi -->
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body text-center bg-white">
+                                <h5 class="card-title">Obi Wan Kenobi</h5>
+                            </div>
+                            <img id="kenobi" src="assets/images/kenobi.png" class="card-img-top" alt="Obi Wan Kenobi">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-heart fa-lg text-danger mr-2"></i>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Health
+                                        </div>
+                                        <div class="col-lg-3">
+                                                <span id="kenobiHealthBadge" class="badge badge-danger m-0 p-2"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>  
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Attack
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="kenobiAttackBadge" class="badge badge-info m-0 p-2"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-shield-alt fa-lg text-secondary mr-2"></i>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Counter Attack
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="kenobiCounterAttackBadge" class="badge badge-secondary m-0 p-2">20</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <!-- Darth Vader -->
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body text-center bg-white">
+                                <h5 class="card-title">Darth Vader</h5>
+                            </div>
+                            <img id="vader" src="assets/images/vader.png" class="card-img-top" alt="Darth Vader">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-heart fa-lg text-danger mr-2"></i>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Health
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="vaderHealthBadge" class="badge badge-danger m-0 p-2"></span>
+                                        </div>
+                                    </div>                            
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>  
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Attack
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="vaderAttackBadge" class="badge badge-info m-0 p-2"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-shield-alt fa-lg text-secondary mr-2"></i>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Counter Attack
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="vaderCounterAttackBadge" class="badge badge-secondary m-0 p-2">40</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <!-- Darth Sidious -->
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body text-center bg-white">
+                                <h5 class="card-title">Darth Sidious</h5>
+                            </div>
+                            <img id="sidious" src="assets/images/sidious.png" class="card-img-top" alt="Darth Sidious">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-heart fa-lg text-danger mr-2"></i>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Health
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="sidiousHealthBadge" class="badge badge-danger m-0 p-2"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>  
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Attack
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="sidiousAttackBadge" class="badge badge-info m-0 p-2"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fas fa-shield-alt fa-lg text-secondary mr-2"></i>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            Counter Attack
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span id="sidiousCounterAttackBadge" class="badge badge-secondary m-0 p-2">30</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="opponentFightArea" class="col-lg-2"></div>
+    </div>
+
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
