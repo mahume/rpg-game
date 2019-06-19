@@ -1,6 +1,6 @@
 # Star Wars RPG
 
-[Homepage]('./src/assets/images/homepage.png')
+![Homepage](./src/assets/images/homepage.png)
 
 ## About
 
