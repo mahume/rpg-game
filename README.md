@@ -4,7 +4,7 @@
 
 ## About
 
-Role playing game somewhere in a galaxy far far away.
+Role-playing game somewhere in a galaxy far far away.
 
 ## Getting Started
 
