@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RPG Game</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
-<!-- Add scrolling start screen, progress bar -->
+    <!-- Add scrolling start screen, progress bar -->
 
     <div class="row">
         <div id="playerFightArea" class="col-lg-2"></div>
@@ -25,7 +32,8 @@
                             <div class="card-body text-center bg-white">
                                 <h5 class="card-title">Luke Skywalker</h5>
                             </div>
-                            <img id="skywalker" src="assets/images/skywalker.png" class="card-img-top" alt="Luke Skywalker">
+                            <img id="skywalker" src="./src/assets/images/skywalker.png" class="card-img-top"
+                                alt="Luke Skywalker">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <div class="row">
@@ -43,7 +51,7 @@
                                 <li class="list-group-item">
                                     <div class="row">
                                         <div class="col-lg-2">
-                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>  
+                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>
                                         </div>
                                         <div class="col-lg-7">
                                             Attack
@@ -62,7 +70,8 @@
                                             Counter Attack
                                         </div>
                                         <div class="col-lg-3">
-                                            <span id="skywalkerCounterAttackBadge" class="badge badge-secondary m-0 p-2">10</span>
+                                            <span id="skywalkerCounterAttackBadge"
+                                                class="badge badge-secondary m-0 p-2">10</span>
                                         </div>
                                     </div>
                                 </li>
@@ -75,7 +84,8 @@
                             <div class="card-body text-center bg-white">
                                 <h5 class="card-title">Obi Wan Kenobi</h5>
                             </div>
-                            <img id="kenobi" src="assets/images/kenobi.png" class="card-img-top" alt="Obi Wan Kenobi">
+                            <img id="kenobi" src="./src/assets/images/kenobi.png" class="card-img-top"
+                                alt="Obi Wan Kenobi">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <div class="row">
@@ -86,14 +96,14 @@
                                             Health
                                         </div>
                                         <div class="col-lg-3">
-                                                <span id="kenobiHealthBadge" class="badge badge-danger m-0 p-2"></span>
+                                            <span id="kenobiHealthBadge" class="badge badge-danger m-0 p-2"></span>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
                                         <div class="col-lg-2">
-                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>  
+                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>
                                         </div>
                                         <div class="col-lg-7">
                                             Attack
@@ -112,7 +122,8 @@
                                             Counter Attack
                                         </div>
                                         <div class="col-lg-3">
-                                            <span id="kenobiCounterAttackBadge" class="badge badge-secondary m-0 p-2">20</span>
+                                            <span id="kenobiCounterAttackBadge"
+                                                class="badge badge-secondary m-0 p-2">20</span>
                                         </div>
                                     </div>
                                 </li>
@@ -125,7 +136,7 @@
                             <div class="card-body text-center bg-white">
                                 <h5 class="card-title">Darth Vader</h5>
                             </div>
-                            <img id="vader" src="assets/images/vader.png" class="card-img-top" alt="Darth Vader">
+                            <img id="vader" src="./src/assets/images/vader.png" class="card-img-top" alt="Darth Vader">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <div class="row">
@@ -138,12 +149,12 @@
                                         <div class="col-lg-3">
                                             <span id="vaderHealthBadge" class="badge badge-danger m-0 p-2"></span>
                                         </div>
-                                    </div>                            
+                                    </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
                                         <div class="col-lg-2">
-                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>  
+                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>
                                         </div>
                                         <div class="col-lg-7">
                                             Attack
@@ -162,7 +173,8 @@
                                             Counter Attack
                                         </div>
                                         <div class="col-lg-3">
-                                            <span id="vaderCounterAttackBadge" class="badge badge-secondary m-0 p-2">40</span>
+                                            <span id="vaderCounterAttackBadge"
+                                                class="badge badge-secondary m-0 p-2">40</span>
                                         </div>
                                     </div>
                                 </li>
@@ -175,7 +187,8 @@
                             <div class="card-body text-center bg-white">
                                 <h5 class="card-title">Darth Sidious</h5>
                             </div>
-                            <img id="sidious" src="assets/images/sidious.png" class="card-img-top" alt="Darth Sidious">
+                            <img id="sidious" src="./src/assets/images/sidious.png" class="card-img-top"
+                                alt="Darth Sidious">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <div class="row">
@@ -193,7 +206,7 @@
                                 <li class="list-group-item">
                                     <div class="row">
                                         <div class="col-lg-2">
-                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>  
+                                            <i class="fas fa-fist-raised fa-lg text-info mr-2"></i>
                                         </div>
                                         <div class="col-lg-7">
                                             Attack
@@ -212,7 +225,8 @@
                                             Counter Attack
                                         </div>
                                         <div class="col-lg-3">
-                                            <span id="sidiousCounterAttackBadge" class="badge badge-secondary m-0 p-2">30</span>
+                                            <span id="sidiousCounterAttackBadge"
+                                                class="badge badge-secondary m-0 p-2">30</span>
                                         </div>
                                     </div>
                                 </li>
@@ -224,7 +238,7 @@
         </div>
         <div id="opponentFightArea" class="col-lg-2"></div>
     </div>
-
-<script src="assets/javascript/app.js"></script>
+    <script src="./src/js/app.js"></script>
 </body>
+
 </html>

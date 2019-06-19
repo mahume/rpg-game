@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 body {
-    background: no-repeat center/75% url(../images/logo.jpg);
+    background: no-repeat center/75% url(../assets/images/logo.jpg);
     background-color: black;
 }
 .card {
