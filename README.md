@@ -8,6 +8,8 @@ Role playing game somewhere in a galaxy far far away.
 
 ## Getting Started
 
+[Test it out](https://mahume.github.io/star-wars-rpg)
+
 1.  Select player.
 2.  Select opponent.
 3.  Once in their fighting positions, click "Attack"
